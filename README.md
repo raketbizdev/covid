@@ -1,24 +1,23 @@
-# README
+# DW IT Renote Tech Exam
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Building Covid Case Api per country group by date.
 
-Things you may want to cover:
+To test this application here are the process
 
-* Ruby version
+1. Clone this repo to your local machine either via cli, ssh or https
+```
+	git clone git@github.com:raketbizdev/covid.git
+```
+2. `cd /your/location/path/covid`
+3. run `bundle command`
+4. run `rails db:migrate`
+5. run `rails db:seed`
+6. run `rspec`
+7. open postman if you have postman otherwise use browser
+	```
+		GET /api/v1/case
+		GET /api/v1/top/confirmed?observation_date=yyy-mm-dd&max_limit={integer}
+	```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Thanks for the opportunity
+Ruel
